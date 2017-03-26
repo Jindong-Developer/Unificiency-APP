@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/group_details_root">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/lmugreen"
+        android:elevation="6dp">
+
+        <ImageView
+            android:id="@+id/groups_details_backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            />
+        <TextView
+            android:layout_below="@id/groups_details_backButton"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/group_details_name"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/groups_details_description_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/groups_details_description"
+            android:textSize="22sp"
+            android:textColor="@color/lmugreen"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/groups_details_description"
+            android:text="@string/groups_details_description_default"
+            android:layout_below="@id/groups_details_description_header"
+            android:layout_margin="16dp"/>
+        <TextView
+            android:id="@+id/groups_details_member_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/groups_details_members"
+            android:layout_below="@id/groups_details_description"
+            android:textSize="22sp"
+            android:textColor="@color/lmugreen"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/group_details_member"
+            android:layout_below="@id/groups_details_member_header"
+            android:layout_margin="16dp">
+        </ListView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/groups_details_join"
+            android:text="@string/groups_details_join"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/pmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            fab:menu_icon="@drawable/pmenu"
+            fab:menu_colorNormal="@color/lmugreen"
+            fab:menu_colorPressed="@color/lmugreen"
+            fab:menu_colorRipple="@color/lmugreen"
+            >
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/groups_details_modify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:src="@drawable/ic_mode_edit_white_48dp"
+                fab:fab_label="@string/groups_details_modify"
+                fab:fab_colorNormal="@color/lmugreen"
+                fab:fab_colorPressed="@color/lmugreen"
+                fab:fab_colorRipple="@color/lmugreen"/>
+            />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/groups_details_leave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_exit"
+                fab:fab_label="@string/groups_details_leave"
+                fab:fab_colorNormal="@color/lmugreen"
+                fab:fab_colorPressed="@color/lmugreen"
+                fab:fab_colorRipple="@color/lmugreen"
+                />
+
+        </com.github.clans.fab.FloatingActionMenu>
+    </RelativeLayout>
+
+
+</LinearLayout>

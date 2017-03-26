@@ -1,0 +1,182 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar_noteDetials"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:background="@color/grey_100">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:contentPadding="5dp">
+
+            <RelativeLayout
+                android:id="@+id/noteWrapper"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/note_detail_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/note_detail_title"
+                    android:layout_below="@id/note_detail_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_alignRight="@id/note_detail_title"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:theme="@style/RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:isIndicator="true"
+                    />
+
+                <TextView
+                    android:id="@+id/note_detail_creator"
+                    android:layout_below="@id/note_detail_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    />
+
+                <TextView
+                    android:id="@+id/note_detail_content"
+                    android:layout_below="@id/note_detail_creator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_below="@id/note_detail_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <com.github.clans.fab.FloatingActionMenu
+                    android:id="@+id/menuForCreator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    fab:menu_icon="@drawable/pmenu"
+                    fab:menu_colorNormal="@color/lmugreen"
+                    fab:menu_colorPressed="@color/lmugreen"
+                    fab:menu_colorRipple="@color/lmugreen"
+                    >
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_delete"
+                        fab:fab_label="@string/remove"
+                        fab:fab_colorNormal="@color/lmugreen"
+                        fab:fab_colorPressed="@color/lmugreen"
+                        fab:fab_colorRipple="@color/lmugreen"/>
+                    />
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_mode_edit_white_48dp"
+                        fab:fab_label="@string/edit"
+                        fab:fab_colorNormal="@color/lmugreen"
+                        fab:fab_colorPressed="@color/lmugreen"
+                        fab:fab_colorRipple="@color/lmugreen"
+                        />
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/fav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fav_star"
+                        fab:fab_label="@string/fav"
+                        fab:fab_colorNormal="@color/lmugreen"
+                        fab:fab_colorPressed="@color/lmugreen"
+                        fab:fab_colorRipple="@color/lmugreen"
+                        />
+
+                </com.github.clans.fab.FloatingActionMenu>
+
+                <com.github.clans.fab.FloatingActionMenu
+                    android:id="@+id/menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    fab:menu_icon="@drawable/pmenu"
+                    fab:menu_colorNormal="@color/lmugreen"
+                    fab:menu_colorPressed="@color/lmugreen"
+                    fab:menu_colorRipple="@color/lmugreen"
+                    >
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/fav2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fav_star"
+                        fab:fab_label="@string/fav"
+                        fab:fab_colorNormal="@color/lmugreen"
+                        fab:fab_colorPressed="@color/lmugreen"
+                        fab:fab_colorRipple="@color/lmugreen"
+                        />
+
+                </com.github.clans.fab.FloatingActionMenu>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
+

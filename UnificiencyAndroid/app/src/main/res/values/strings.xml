@@ -1,0 +1,99 @@
+<resources>
+
+    <string name="app_name">Unificiency</string>
+
+    <string name="username">Email</string>
+    <string name="password">Passwort</string>
+    <string name="login">Login</string>
+    <string name="register">Registrieren</string>
+    <string name="nickname">Nickname</string>
+    <string name="password_confirm">Passwort Wiederholen</string>
+    <string name="major">Studiengang</string>
+    <string name="creat_account">Konto anlegen</string>
+
+    <string name="validation_email">Bitte eine gültige Email Adresse eingeben</string>
+    <string name="validation_password">Passwort muss mindestens 6 Zeichen enthalten</string>
+    <string name="validation_passwords_equal">Eingegebene Passwörter stimmen nicht überein</string>
+    <string name="validation_topic">Topic muss mindestens 3 Zeichen enthalten</string>
+    <string name="validation_nickname">Bitte einen Nickname eingeben</string>
+
+    <string name="nav_item_buildings">Gebäude</string>
+    <string name="nav_item_groups">Lerngruppen</string>
+    <string name="nav_item_notes">Notizen</string>
+    <string name="nav_item_setting">Profile</string>
+    <string name="nav_item_account">Mein Konto</string>
+    <string name="nav_item_logout">Abmelden</string>
+
+    <!-- Groups Fragment -->
+    <string name="groups_title">Lerngruppen</string>
+    <string name="groups_new_group">Neue Gruppe erstellen</string>
+    <string name="groups_details_description">Gruppenbeschreibung</string>
+    <string name="groups_details_description_default">Diese Gruppe hat noch keine Beschreibung angegeben.</string>
+    <string name="groups_details_members">Mitglieder</string>
+    <string name="groups_details_join">Beitreten</string>
+    <string name="groups_details_leave">Verlassen</string>
+    <string name="groups_details_modify">Info Bearbeiten</string>
+
+    <!-- Group Details -->
+    <string name="groups_details_password_message">Passwort eingeben</string>
+    <string name="groups_details_password_title">Diese Gruppe verlangt ein Passwort</string>
+    <string name="groups_details_password_default">Hier Passwort eingeben</string>
+    <string name="groups_details_password_send">Senden</string>
+    <string name="groups_details_password_cancel">Abbrechen</string>
+    <string name="groups_details_groupname_extra">groups_details_groupname</string>
+    <string name="title_activity_group_details">GroupDetails</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!--  Group -->
+    <string name="groups_new_group_title">Neue Gruppe erstellen</string>
+    <string name="groups_new_group_create">Erstellen</string>
+    <string name="groups_new_group_information">Hier kannst du eine neue Lerngruppe erstellen. Wenn du kein Passwort eingibst, kann jeder der Gruppe beitreten.</string>
+    <string name="groups_new_group_groupname">Gruppenname eingeben</string>
+    <string name="groups_new_group_topic">Topic eingeben</string>
+    <string name="groups_new_group_description">Gruppenbeschreibung eingeben</string>
+    <string name="groups_new_group_password">Passwort eingeben (optional)</string>
+
+    <string name="groups_new_group_error_description">Bitte mindestens 10 Zeichen eingeben!</string>
+    <string name="groups_edit_group_save">Speichern</string>
+    <string name="groups_edit_group_information">Hier kannst du die Beschreibung und Topic der Gruppe anpassen.</string>
+
+    <!-- Notes -->
+    <string name="notes_new_note_title">Neue Notiz erstellen</string>
+    <string name="addPhoto_new_note">Bild hinzufügen</string>
+    <string name="notes_new_goupsName_spinner">Gruppname auswälhen:</string>
+    <string name="note_detail">Notizdetail</string>
+    <string name="preview">Notiz Vorschau</string>
+    <string name="notes_new_note_topic">Topic eingeben</string>
+    <string name="notes_new_note_create">Erstellen</string>
+    <string name="notes_new_note_name">Notizenname eingeben</string>
+    <string name="notes_new_note_content">Notizinhalt eingeben</string>
+    <string name="notes_new_note_password">Passwort eingeben (optional)</string>
+    <string name="notes_new_note_information">Hier kannst du eine neue Notiz erstellen. Du kannst bei Bedarf auch ein Foto von der Kamera bzw. Gallerie auswählen und zur Notiz hinzufügen.</string>
+    <string name="notes_edit_note_information">Hier kannst du diese Notiz bearbeiten.</string>
+
+    <!-- Settings and Eidt -->
+    <string name="setting_hint">Hier kannst du die Benachrichtigungen einstellen.</string>
+    <string name="edit_hint">, hier kannst du deine Profile aktualisieren. Lass die Passwörter Felder leer, wenn du sie nicht ändern willst.</string>
+    <string name="toolbar_edit_profile">Profile editieren</string>
+    <string name="toolbar_edit_note">Notiz editieren</string>
+    <string name="toolbar_edit_group">Gruppe editieren</string>
+    <string name="exit">Abmeldung</string>
+    <string name="camera_album">Kamera oder Galerie auswählen</string>
+    <string name="dialog_exit">Unificieny beenden?</string>
+
+
+    <!-- Server Feedback -->
+    <string name="server_error">Fehler beim Server, bitte später nochmal versuchen</string>
+
+    <!-- General -->
+    <string name="save">Speichern</string>
+    <string name="edit">Bearbeiten</string>
+    <string name="fav">Favorisieren</string>
+    <string name="unfav">Nicht mehr Mögen</string>
+    <string name="remove">Löschen</string>
+    <string name="yes">Ja</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="invalid_input">Eingaben sind fehlerhaft. Bitte nochmal überprüfen!</string>
+    <string name="there_letters_min">Bitte mindestens 3 Zeichen eingeben!</string>
+
+</resources>
